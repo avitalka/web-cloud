@@ -1,0 +1,22 @@
+header {
+    width :100px;
+    height: 99px ;
+}
+.top_header{
+    padding-top: 28px;
+    padding-left: 232px;
+
+}
+  
+
+.top_header li a {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color:"#2222222" ;
+    opacity: 0.3;
+}

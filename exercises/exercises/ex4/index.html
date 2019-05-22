@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./includes/style.css" />
+</head>
+<body>
+
+    <div id ="container">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+    </div>
+    <div id="content">
+        <div id="content1">
+            <form action="http://html5-book.co.il/teach/forms/get_form2.php" method="get">
+                <div class="row-1">
+                    <div class="row-1-1">
+                        <input class="col-1" name ="fullName">
+                        <span>Full Name</span>
+                    </div>
+                    <div class="row-1-1">
+                        <input class="col-1" type ="password" name ="pass" pattern="[A-Za-z0-9]{6,8}">
+                        <span>Password</span>
+                    </div>
+                    <div class="row-1-1">
+                        <input class="col-1" name ="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+                        <span>E-mail Address</span>
+                    </div>
+                    <div class="row-1-1">
+                        <input class="col-1" type ="url" name ="website" >
+                        <span>Website</span>
+                    </div>
+                    <div class="row-1-1">
+                        <input class="col-1" name ="phone" pattern ="[0-9]{10,10}" >
+                        <span>Phone Number</span>
+                    </div>
+                <div class="row-1-1"> 
+                    <select class="col-1" name="age">
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>30</option>
+                        <option>31</option>
+                        <option>32</option>
+                        <option>33</option>
+                    </select>
+                    <span class="age">Age</span>
+                </div>
+                <div class="row-1-1"> 
+                    <input class="col-1" type = "number" name ="coffee" value="0" min="0" max="20">
+                    <span>Nubmer of Partys You Go To In A Month</span>
+                </div>
+                <div class="row-1-1">
+                    <input class="col-1" type="range" name ="temper" min="0" max="100">
+                    <span class="volume">Preferred Volume</span>
+                </div>
+                <div class="row-1-1">
+                    <input class="col-1" name ="address" >
+                    <span>Address</span>
+                </div>
+                </div>
+                    <span class ="hobbies_label">Hobbies</span>
+                <div class="row-2">
+                    <label class="checkmark_container">Sleeping
+                        <input type= "checkbox" name ="interests[]" value="Sleeping">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkmark_container">Sports
+                        <input type= "checkbox" name ="interests[]" value="Sports">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkmark_container">Waching TV
+                        <input type= "checkbox" name ="interests[]" value="WachingTV ">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkmark_container">Programming
+                        <input type= "checkbox" name ="interests[]" value="Programming">
+                        <span class="checkmark"></span>
+                    </label>
+                    </div>
+                    <span class="gender_label"> Gender  </span>
+                    <div class ="row-3"> 
+                        <label class="container_radio">Female
+                            <input type="radio" name="gender" value="female" checked>
+                            <span class="radio"></span>
+                        </label>
+                      <label class="container_radio"> Male
+                            <input type="radio" name="gender" value="male">
+                            <span class="radio"></span>
+                        </label>
+                   
+                    </div>
+                    <input class="submit_btn" type = "submit" >
+                    <h1 id="submit" onclick="submitFunction()">
+                        <a >SUBMIT</a>
+                    <h1>
+            </form>
+        </div>
+    </div>
+    <script src="script/code.js"></script>
+</body>
+</html>

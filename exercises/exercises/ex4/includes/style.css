@@ -1,0 +1,390 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+#container {
+  display: block;
+  height: 1000px;
+}
+
+#container div {
+  margin-left: 200px;
+  position: fixed;
+  background-position: center !important;
+  transform: translateY(0px);
+}
+
+@-webkit-keyframes  inputAnimation {
+  from {
+    border-color: rgb(240, 240, 240);
+  }
+
+  to {
+    border-color: #FC9F3B;
+  }
+}
+
+input:focus {
+  outline: none;
+  border-color: #FC9F3B;
+  -webkit-animation-name: inputAnimation;
+  -webkit-animation-duration: 1s;
+}
+
+input {
+  outline: none;
+  border-color: white;
+  background: black;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  color: white;
+}
+
+select:focus {
+  outline: none;
+  border-color: #FC9F3B;
+  -webkit-animation-name: inputAnimation;
+  -webkit-animation-duration: 1s;
+}
+
+select {
+  outline: none;
+  border-color: white;
+  background: black;
+  border-width: 1px;
+  border-style: solid;
+  color: white;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  color: white;
+}
+
+.col-1 input {
+  margin-top: 10px;
+}
+
+#content {
+  position: absolute;
+  background: black;
+  width: 100%;
+  top: 670px;
+  padding-left: 200px;
+}
+
+.item1 {
+  background: url(../svg/sky.svg);
+  background-size: cover;
+  height: 700px;
+  width: 1050px;
+  z-index: auto;
+}
+
+.item2 {
+  background: url(../svg/JoinOurMembersClub1.svg);
+  background-size: cover;
+  width: 600px;
+  height: 100px;
+  left: 200px;
+  top: 150px;
+}
+
+.item3 {
+  background: url(../svg/water.svg);
+  background-size: cover;
+  height: 30px;
+  width: 400px;
+  top: 540px;
+  left: 250px;
+  z-index: auto;
+}
+
+.item4 {
+  background: url(../svg/trees.svg);
+  background-size: cover;
+  top: 445px;
+  width: 1050px;
+  height: 137px;
+}
+
+.item5 {
+  background: url(../svg/crowd3.svg);
+  background-size: cover;
+  width: 431.6px;
+  height: 29.3px;
+  top: 550px;
+  left: 250px;
+}
+
+.item6 {
+  background: url(../svg/crowd2.svg);
+  background-size: cover;
+  width: 666.3px;
+  height: 86.3px;
+  top: 540px;
+  left: 130px;
+}
+
+.item7 {
+  background: url(../svg/crowd1.svg);
+  background-size: cover;
+  width: 1050px;
+  height: 173px;
+  top: 500px;
+}
+
+.label_class {
+  margin-left: 20px;
+  color: white;
+}
+
+.row-1 lable {
+  margin-top: 10px;
+  display: block;
+}
+
+.row-2 {
+  border-radius: 10px;
+  width: 450px;
+  padding: 20px;
+  border: solid 1px;
+  border-color: white;
+  display: block;
+  position: relative;
+  left: 300px;
+  top: 50px;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.row-2 lable {
+  display: block;
+  background: white;
+  margin-top: 10px;
+}
+
+.hobbies_label {
+  position: relative;
+  top: 63px;
+  left: 370px;
+  background: black;
+  z-index: 1;
+}
+
+.row-3 {
+  position: relative;
+  left: 300px;
+  border-radius: 10px;
+  top: 60px;
+  width: 450px;
+  padding: 20px;
+  margin-top: 10px;
+  border: solid 1px;
+  border-color: white;
+  display: block;
+  color: white;
+  margin-right: 10px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.row-3  lable {
+  display: block;
+  background: white;
+}
+
+.row-3 input {
+  margin-top: 10px;
+  color: white;
+}
+
+.row-3 input vlaue {
+  display: block;
+}
+
+.gender_label {
+  z-index: 1;
+  background: black;
+  position: relative;
+  top: 83px;
+  left: 370px;
+}
+
+.submit_btn {
+  display: none;
+}
+
+.col-1 {
+  margin-top: 60px;
+  position: relative;
+  left: 350px;
+}
+
+#submit {
+  position: relative;
+  top: 100px;
+  left: 330px;
+  font-size: 6em;
+  margin: 20px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+#submit a {
+  color: #fff;
+  font-family: 'Monoton', cursive;
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+#submit a:hover {
+  color: #FF1177;
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+.checkmark_container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.checkmark_container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkmark_container input:checked ~ .checkmark {
+  background-color: #FC9F3B;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark_container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkmark_container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.container_radio {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container_radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container_radio:hover input ~ .radio {
+  background-color: #ccc;
+}
+
+.container_radio input:checked ~ .radio {
+  background-color: #FC9F3B;
+}
+
+.radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container_radio input:checked ~ .radio:after {
+  display: block;
+}
+
+.container_radio .radio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+span {
+  color: white;
+  position: relative;
+  top: 40px;
+  left: -35px;
+  text-transform: uppercase;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.volume {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  position: relative;
+  top: 0px;
+}
+ 
